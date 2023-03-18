@@ -14,6 +14,13 @@ I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
 ```
 
+## Credit
+
+Prompt: 
+https://www.bitdegree.org/learn/javascript-prompt
+https://javascript.plainenglish.io/what-are-javascript-prompts-4a2dae6e08de
+
+
 ## Acceptance Criteria
 
 ```
