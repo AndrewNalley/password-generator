@@ -41,41 +41,38 @@ function writePassword() {
 
   var specialCharacterFeedback
   if (confirm("Include special characters? OK = YES, cancel = NO")) {
-    specialCharacterFeedback === true;
+    specialCharacterFeedback = true;
     alert("You have chosen to include special characters.");
   } else {
-    specialCharacterFeedback === false;
+    specialCharacterFeedback = false;
     alert("You have NOT chosen to include special characters.")
   }
-  // Character selector
-  var upperCase;
-  var lowerCase;
-  var numbers;
-  var specialCharacters;
-  
+
+  // Character types selected by user are added to the totalChars variable.
+  var totalChars = "";
   if (upperCaseFeedback === true) {
-    upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    totalChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   };
   if (lowerCaseFeedback === true) {
-    lowerCase = "abcdefghijklmnopqrstuvwxyz"
+    totalChars += "abcdefghijklmnopqrstuvwxyz";
   }
   if (numericFeedback === true) {
-    numbers = 0123456789;
+    totalChars += "0123456789";
   }
   if (specialCharacterFeedback === true) {
-    specialCharacters = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+    totalChars += " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
   }
-  
-  var totalChars = upperCase + lowerCase + numbers + specialCharacters;
 
-  //password generator
-  do {
+  // Password generator
+  if (totalChars.length > 0) {
     var password = "";
     for (var i = 0; i < passwordNumber; i++) {
       var randomNumber = Math.floor(Math.random() * totalChars.length);
       password += totalChars.substring(randomNumber, randomNumber + 1);
     }
-  } while (!upperCase && !lowerCase && !numbers && !specialCharacters);
+  } else {
+    alert("Please choose at least one of the character types.")
+  }
 
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
