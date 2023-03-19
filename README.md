@@ -23,6 +23,10 @@ https://javascript.plainenglish.io/what-are-javascript-prompts-4a2dae6e08de
 Confirm:
 https://sabe.io/blog/javascript-yes-no-confirmation-box#:~:text=The%20best%20way%20to%20create,Ok%20and%20a%20Cancel%20button.
 
+Random Password generator:
+https://dev.to/code_mystery/random-password-generator-using-javascript-6a
+https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/
+
 
 ## Acceptance Criteria
 
