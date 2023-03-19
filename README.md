@@ -27,6 +27,9 @@ Random Password generator:
 https://dev.to/code_mystery/random-password-generator-using-javascript-6a
 https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/
 
+Syntax:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
+
 
 ## Acceptance Criteria
 
