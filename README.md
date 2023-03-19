@@ -1,20 +1,42 @@
 # 03 JavaScript: Password Generator
 
-## Your Task
+## Description
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+- What was your motivation?
+This project was a learning tool used to introduce me to JavaScript logic. The simple task of generating a random password requires a good amount of logic in the code to work, especially when users should be able to choose the character types used and the length of the password. 
 
-## User Story
+This generator will guide the user through a few easy steps so that they can get a randomly generated password. This is for users who can't think of a good, secure password. 
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+During this project, I learned a lot about using "if" statements in particular. 
 
-## Credit
+## Table of Contents 
+
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+
+## Usage
+
+Instructions: 
+
+This simple generator guides the user through a set of prompts, logging user choices with each. Then, based on user choices, a password is generated and displayed to the User.
+
+Photos:
+
+![Click the red button to get started.](./Assets/Button.png)
+![Asks how long you want the password.](./Assets/length.png)
+![Confirms user input.](./Assets/length-confirmation.png)
+![Asks if password should include lowecase letters.](./Assets/lowercase-query.png)
+![Confirms user input.](./Assets/lowercase-confirmation.png)
+![Asks if uppercase letters should be included.](./Assets/uppercase-query.png)
+![Confirms user input. Goes on to ask if numbers or special characters are included](./Assets/uppercase-confirmation.png)
+![Password generates and is able to be copied.](./Assets/generated-password.png)
+
+
+## Credits
 
 Prompt: 
 https://www.bitdegree.org/learn/javascript-prompt
@@ -30,88 +52,38 @@ https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript
 Syntax:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
 
+## License
 
-## Acceptance Criteria
+MIT License
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Copyright (c) [2023] [Andrew Nalley]
 
-## Mock-Up
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-The following image shows the web application's appearance and functionality:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-## Grading Requirements
+---
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
 
-### Technical Acceptance Criteria: 40%
+## How to Contribute
 
-* Satisfies all of the preceding acceptance criteria.
+Please see the [Contributor Covenant](https://www.contributor-covenant.org/) 
 
-### Deployment: 32%
+## Tests
 
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Try to pick a password length greater or less than the mentioned length. Try not to choose any character type and see what happens. 
